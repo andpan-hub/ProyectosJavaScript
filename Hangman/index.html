@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman</title>
+    <link href="index.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div id="letters"></div>
+        <div id="errors"></div>
+        <button id="btn" type="button">Reset</button>
+    </div>
+    <div class="picture">
+        <svg viewBox="0 0 500 500" width="300" height="400" id="picture" xmlns="http://www.w3.org/2000/svg">
+            <rect x="43.489" y="54.681" width="6.055" height="330.589" style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);"/>
+            <rect x="1.197" y="379.602" width="88.441" height="8.487" style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);"/>
+            <rect x="42.637" y="53.318" width="232.494" height="4.296" style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);"/>
+            <line style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" x1="113.557" y1="55.171" x2="45.827" y2="105.226"/>
+            <path style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" d="M 201.648 54.153 C 200.961 54.198 196.411 55.828 198.227 57.644 C 200.935 60.352 203.168 54.331 201.734 52.898 C 200.092 51.255 198.232 60.861 205.932 56.827 C 207.722 55.89 205.125 49.756 203.704 51.192 C 200.681 54.246 204.074 58.855 207.535 56.181 C 209.568 54.61 205.465 52.944 204.95 53.199 C 203.373 53.978 203.925 65.317 203.925 66.896 C 203.925 79.662 204.086 92.59 204.086 105.217"/>
+            <g id="id6">
+            <circle style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" transform="matrix(0.597372, 0, 0, 0.734347, -34.647549, -69.403145)" cx="401.111" cy="258.098" r="21.014"/>
+            <circle style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" transform="matrix(0.597372, 0, 0, 0.749139, -36.63879, -68.757751)" cx="400.826" cy="248.369" r="2.045"/>
+            <circle style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" transform="matrix(0.597372, 0, 0, 0.705565, -36.63879, -58.044914)" cx="413.611" cy="249.383" r="2.275"/>
+            <line style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" x1="206.641" y1="119.78" x2="206.951" y2="124.095"/>
+            <path style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" d="M 201.759 130.001 C 204.512 128.964 209.982 125.86 209.982 131.408"/>
+
+            </g>
+
+            <path style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" d="M 204.354 136.625 C 204.411 139.296 204.704 141.984 204.704 144.643 C 204.704 145.438 204.643 149.285 204.643 147.875"/>
+
+            <rect id="id5" x="201.25" y="147.849" width="8.984" height="83.459" style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);"/>
+            <line id="id4" style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" x1="200.476" y1="147.352" x2="187.464" y2="205.804"/>
+            <line id="id3" style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" x1="210.993" y1="147.618" x2="226.279" y2="209.696"/>
+            <line id="id2" style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" x1="200.217" y1="231.526" x2="188.328" y2="336.395"/>
+            <line id="id1" style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" x1="210.645" y1="231.159" x2="222.429" y2="340.097"/>
+            <path style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" d="M 203.302 139.117 C 204.262 141.274 207.24 140.88 206.235 139.709 C 205.125 138.417 201.05 139.82 201.808 140.939 C 202.524 141.997 208.399 141.436 208.013 139.77 C 206.271 132.258 196.852 142.546 204.366 141.467 C 205.585 141.291 206.896 140.939 208.113 140.939"/>
+          </svg>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
